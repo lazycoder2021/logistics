@@ -113,6 +113,7 @@ video {
 .menu.active{
     height:100vh; 
     display:block;
+   
 }
 
 .menu-items{
@@ -546,7 +547,7 @@ i{
     }
 
     .sec3{
-        margin-top:0px;
+        margin-bottom:100px;
     }
 
     .serviceTop{
@@ -555,7 +556,7 @@ i{
 
     .serviceBottom {
         height: 50%;
-        margin-top:30px;
+        margin-top:0px;
     }
     
 }
@@ -603,7 +604,7 @@ i{
 
 @media only screen and (max-width:480px) {
     .section4{
-        margin-top:150px;
+        margin-top:200px;
         margin-bottom:200px;
     }
 
@@ -658,6 +659,7 @@ i{
 
 .header_text{
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     height:100%; 
@@ -671,7 +673,7 @@ i{
 .contact{
     //margin-top:100px;
     height:90vh;
-    border:10px solid black;
+    //border:1px solid black;
     width:100%; 
     display:flex;
 }
@@ -679,7 +681,7 @@ i{
 .contactLeft, .contactRight{
     width:50%; 
     height:100%; 
-    border:2px solid red;
+    //border:2px solid red;
 }
 
 .contactLeft{
@@ -701,14 +703,361 @@ i{
     font-size:20px;
 }
 
+.contactHeader h2{
+    margin-bottom:15px;
+}
+
 .contactAddress{
     text-align:center;
     margin-top:20px;
 }
 
-.contactForm{
-    border:1px solid black;
+@media only screen and (max-width:480px) {
+    .header{
+        width:480px;
+    }
+
+    .contact{
+        height:195vh;
+        flex-direction:column;
+    }
+
+    .contactLeft, .contactRight{
+        width:100%; 
+    }
+
+    .cc{
+        overflow:hidden;
+    }
+
 }
+
+    /* form */
+
+    .contactForm {
+        //border:1px solid black;
+    }
+
+    .formcontrol {
+        margin-bottom: 20px;
+    }
+
+    .formControl1 {
+        //border:1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+        .formControl1 input {
+            width: 50%;
+            padding: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+
+    .formControl2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+        .formControl2 input {
+            width: 100%;
+            padding: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+
+    .formControl3 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+        .formControl3 textarea {
+            width: 100%;
+            padding: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+
+    .btn {
+        padding: 15px 20px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    .para {
+        color: #B0B0B0;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    /* careers page */
+
+    .careers {
+        width: 80%;
+        margin: 20px auto;
+        height: 80vh;
+        //border:1px solid black;
+    }
+
+        .careers p {
+            text-align: center;
+            font-size: 20px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+
+    .openPositions {
+        width: 80%;
+        height: 40vh;
+        //border:1px solid black;
+        margin: 10px auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .openPosition {
+        width: 33.33%;
+        border: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+
+        .openPosition h2 {
+            font-weight: 100;
+            margin-top: 10px;
+        }
+
+    .jd {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width:480px) {
+        .header {
+            width: 480px;
+        }
+
+        .careers {
+            width: 480px;
+            height: 150vh;
+        }
+
+            .careers p {
+                font-size: 18px;
+                width: 460px;
+            }
+
+        .openPositions {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .openPosition {
+            width: 100%;
+            height: 100%;
+            border: 0px solid black;
+            margin-bottom: 20px;
+        }
+
+        .careerContainer {
+            overflow: hidden;
+        }
+    }
+
+
+
+
+
+
+    /* team page */
+
+    .team {
+        width: 80%;
+        height: 130vh;
+        //border:1px solid red;
+        margin: 100px auto;
+    }
+
+    .teamMembers {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .teamMember {
+        width: 33.33%;
+        height: 300px;
+        //border:1px solid black;
+    }
+
+    .teamMemberImage {
+        width: 50%;
+        height: 70%;
+        //border:1px solid blue;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+        .teamMemberImage img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    .teamMemberDetails {
+        width: 100%;
+        height: 30%;
+        //border: 1px solid green;
+        text-align: center;
+    }
+
+        .teamMemberDetails h2 {
+            margin-top: 20px;
+        }
+
+
+    @media only screen and (max-width:480px) {
+        .teamContainer {
+            overflow: hidden;
+        }
+
+
+        .header {
+            width: 480px;
+        }
+
+        .team {
+            height: 360vh;
+        }
+
+        .teamMembers {
+            flex-direction: column;
+        }
+
+        .teamMember {
+            width: 100%;
+        }
+    }
+
+    /* news and video page */
+
+    .news-items {
+        height: 115vh;
+        border: 1px solid black;
+        width: 80%;
+        margin: 100px auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .news-items-left {
+        width: 75%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .news-item-left {
+        //border:1px solid black;
+        margin: 10px 0px;
+    }
+
+        .news-item-left h3 {
+            margin-bottom: 10px;
+        }
+
+        .news-item-left p {
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+    .news-items-right {
+        width: 25%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .news-header {
+        text-align: center;
+        margin-top: 0px;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    .video-contents {
+        width: 100%;
+        height: 90%;
+        //border:1px solid green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-content {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 30px;
+    }
+
+        .video-content img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .xx {
+        margin-top: 20px;
+    }
+
+    @media only screen and (max-width:480px) {
+        .nnv_container {
+            overflow: hidden;
+        }
+
+        .header {
+            width: 480px;
+        }
+
+        .news-header h2 {
+            margin-bottom: 20px;
+        }
+
+        .news-items {
+            height: 355vh;
+            flex-direction: column;
+            border: 0px solid black;
+        }
+
+        .news-items-left {
+            width: 100%;
+            border: 0px solid black;
+        }
+
+        .news-item-left, .news-items-right {
+            width: 100%;
+            border: 0px solid black;
+        }
+
+        .news-items-right {
+            margin-top: 50px;
+        }
+    }
+
 
 
 
