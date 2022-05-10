@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSV TRANSPORT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <div class="bars">
+            <i class="fa fa-bars bar" style="font-size:30px;"></i>
+        </div>
+
+        <div class="menu">
+            <div class="menu-items">
+                <ul>
+                    <li><a href="services.html" class="menu-item">Services</a></li>
+                    <li><a href="team.html" class="menu-item">Team</a></li>
+                    <li><a href="news_and_videos.html" class="menu-item">News and Videos</a></li>
+                    <li><a href="careers.html" class="menu-item">Careers</a></li>
+                    <li><a href="contact.html" class="menu-item">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header_text">
+            <h1>CONTACT US</h1>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="contactLeft">
+            <div class="contactHeader">
+                <h2>Corporate Office</h2>
+            </div>
+            <div class="contactAddress">
+                <h2>SSV Transport Private Limited</h2>
+                <h3>Transportation & Logistics Company</h3>
+                <p>123, Thambu Chetty Street</p>
+                <p>Parrys, Chennai - 600112</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Fax:414-761-1068</p>
+                <p>Email:ssvtransport@gmail.com</p>
+            </div>
+            <div class="contactMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.044473906949!2d80.2873460147719!3d13.096367990774116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526f4514d284d9%3A0x530aff6e4b1e1a5c!2sThambu%20Chetty%20St%2C%20George%20Town%2C%20Chennai%2C%20Tamil%20Nadu%20600001!5e0!3m2!1sen!2sin!4v1652157687972!5m2!1sen!2sin" width="740" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contactRight">
+            <div class="contactHeader">
+                <h2>Get In Touch</h2>
+            </div>
+            <form class="contactForm">
+                <div class="formControl1">
+                    <input type="text" placeholder="Enter your name" />
+                    <input type="email" placeholder="Enter your email" />
+                </div>
+                <div class="formControl2">
+                    <input type="text" placeholder="Enter the Subject" />
+                </div>
+                <div class="formControl3">
+                    <textarea placeholder="Enter the Message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <section class="footer">
+        <div class="footerTop">
+            <div class="logo">
+                <p>SSV Transport Private Limited</p>
+                <span>Transportation and Logistics</span>
+                <div class="social-media">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="address">
+                <i class="fa fa-map-marker"></i>
+                <p>123, Thambu Chetty Street,</p>
+                <p>Parrys, Chennai - 600112</p>
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope env"></i>
+                <p>ssvtransort@gmail.com</p>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="links">Home | Services | Corporate Services | Team | News and Videos | Careers | Contact Us</div>
+        </div>
+        <div class="copyRight">
+            <p>&copy;2022, SSV Transport Private Limited, All Rights Reserved</p>
+        </div>
+    </section>
+
+
+    <script>
+        document.querySelector('.bar').addEventListener('click', function () {
+            console.log('triggered')
+
+            document.querySelector('.menu').classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
