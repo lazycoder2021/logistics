@@ -29,9 +29,10 @@ html {
 }
 
 .backToTop a{
-    //color:white;
+    color:white;
     padding:10px 20px;
-    //opacity:0.5;
+    background-color:black;
+    opacity:0.7;
 }
 
 .backToTop {
@@ -676,12 +677,14 @@ i{
     //border:1px solid black;
     width:100%; 
     display:flex;
+    position:relative;
 }
 
 .contactLeft, .contactRight{
     width:50%; 
     height:100%; 
     //border:2px solid red;
+    
 }
 
 .contactLeft{
@@ -806,6 +809,7 @@ i{
         margin: 20px auto;
         height: 80vh;
         //border:1px solid black;
+        position:relative;
     }
 
         .careers p {
@@ -856,6 +860,7 @@ i{
             .careers p {
                 font-size: 18px;
                 width: 460px;
+                text-align:left;
             }
 
         .openPositions {
@@ -868,6 +873,7 @@ i{
             height: 100%;
             border: 0px solid black;
             margin-bottom: 20px;
+            text-align:left;
         }
 
         .careerContainer {
@@ -894,6 +900,7 @@ i{
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
+        position:relative;
     }
 
     .teamMember {
@@ -962,6 +969,7 @@ i{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        position:relative;
     }
 
     .news-items-left {
